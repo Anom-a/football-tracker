@@ -6,9 +6,34 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 A full-stack application that broadcasts live football match scores and events (goals, cards) to users in real-time. Built to demonstrate **Server-Sent Events (SSE)** for high-performance, one-way real-time communication, structured using **Clean Architecture** principles in Go.
+## ⚙️ Installation & Setup
 
+Follow these steps to get the **Football Match Tracker** running on your local machine.
+
+### 📋 Prerequisites
+Ensure you have the following installed on your system:
+*   **[Go](https://go.dev/dl/)** (v1.21 or higher)
+*   **[Node.js](https://nodejs.org/)** (v18 or higher)
+*   **MongoDB** (Running locally on port `27017` or via MongoDB Atlas)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/football-tracker.git
+cd football-tracker
+```
+### 2. Backend setup
+```bash
+# From the root directory
+go mod tidy
+go run cmd/api/main.go
+```
+### 3. Frontend setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
 ## 🚀 Features
-
 ### 📢 User Experience (Public)
 *   **Live Dashboard:** View all ongoing matches with real-time score updates without refreshing the page.
 *   **Match Details:** Click into a match to see a live timeline of events (Goals, Cards, Fouls).
