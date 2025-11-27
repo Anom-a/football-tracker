@@ -23,6 +23,7 @@ cd football-tracker
 ```
 ### 3. Prerequisites installs
 ```bash
+cd backend
 https://github.com/gin-gonic/gin
 go get go.mongodb.org/mongo-driver/v2/mongo
 ```
