@@ -21,6 +21,11 @@ Ensure you have the following installed on your system:
 git clone https://github.com/yourusername/football-tracker.git
 cd football-tracker
 ```
+### 3. Prerequisites installs
+```bash
+https://github.com/gin-gonic/gin
+go get go.mongodb.org/mongo-driver/v2/mongo
+```
 ### 2. Backend setup
 ```bash
 # From the root directory
